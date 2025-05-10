@@ -1,0 +1,37 @@
+{
+  "name": "@victorolayemi/react-skeleton-loader",
+  "version": "1.0.0",
+  "description": "A customizable React skeleton loader component",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "publishConfig": {
+    "@testimonyismine:registry": "https://npm.pkg.github.com"
+  }
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "react",
+    "skeleton",
+    "loader",
+    "loading",
+    "component"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.5.1",
+    "prop-types": "^15.8.1",
+    "react": "^19.1.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.26.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5"
+  }
+}
