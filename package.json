@@ -1,12 +1,9 @@
 {
-  "name": "@victorolayemi/react-skeleton-loader",
+  "name": "react-skeleton-loader",
   "version": "1.0.0",
   "description": "A customizable React skeleton loader component",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "publishConfig": {
-    "@testimonyismine:registry": "https://npm.pkg.github.com"
-  }
   "files": [
     "dist"
   ],
