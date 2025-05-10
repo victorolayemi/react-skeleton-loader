@@ -26,8 +26,7 @@ const Skeleton: React.FC<SkeletonProps> = ({
   };
 
   return (
-    <div
-      className={classNames("skeleton-loader", className)}
+    <div className={classNames("skeleton-loader", className)}
       style={baseStyle}
     />
   );
