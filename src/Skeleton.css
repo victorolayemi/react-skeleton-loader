@@ -13,5 +13,6 @@
   .skeleton-loader {
     background-color: #e0e0e0;
     animation: pulse 1.5s infinite ease-in-out;
+    margin-top: 10px;
   }
   

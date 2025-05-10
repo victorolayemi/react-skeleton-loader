@@ -8,6 +8,10 @@
   <img src="https://img.shields.io/npm/dm/react-skeleton-loaders?style=flat-square" alt="downloads" />
 </p>
 
+<p>
+  <img src="https://victorolayemi.github.io/porfolio/Screenshot.gif" alt="React Skeleton Loader Example" style="max-width: 100%; border: 1px solid #ddd; border-radius: 8px;" />
+</p>
+
 <hr />
 
 <h2>✨ Features</h2>
@@ -26,7 +30,7 @@
 <pre><code>yarn add react-skeleton-loaders
 </code></pre>
 
-<h2>🚀 Usage</h2>
+<h2>🚀 Basic Usage</h2>
 
 <pre><code class="language-tsx">
 import React from 'react';
@@ -41,6 +45,37 @@ const MyComponent = () => {
     &lt;/div&gt;
   );
 };
+</code></pre>
+
+<h2>📚 Full Example</h2>
+
+<pre><code class="language-tsx">
+import React from 'react';
+import Skeleton from 'react-skeleton-loaders';
+
+const App = () => {
+  const posts = [1, 2, 3, 4, 5, 6];
+
+  return (
+    &lt;div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(auto-fill, minmax(500px, 1fr))',
+      gap: '20px',
+      margin: '10px',
+    }}&gt;
+      {posts.map((post, index) =&gt; (
+        &lt;div key={index} style={{ padding: '10px', border: '1px solid #ddd', borderRadius: '8px' }}&gt;
+          &lt;Skeleton circle width="40px" height="40px" /&gt;
+          &lt;Skeleton width="60%" height="20px" /&gt;
+          &lt;Skeleton width="100%" height="15px" /&gt;
+          &lt;Skeleton width="100%" height="15px" /&gt;
+        &lt;/div&gt;
+      ))}
+    &lt;/div&gt;
+  );
+};
+
+export default App;
 </code></pre>
 
 <h2>⚙️ Props</h2>
@@ -58,20 +93,20 @@ const MyComponent = () => {
     <tr>
       <td><code>width</code></td>
       <td><code>string | number</code></td>
-      <td><code>100%</code></td>
+      <td><code>"100%"</code></td>
       <td>Width of the skeleton</td>
     </tr>
     <tr>
       <td><code>height</code></td>
       <td><code>string | number</code></td>
-      <td><code>1rem</code></td>
+      <td><code>"1rem"</code></td>
       <td>Height of the skeleton</td>
     </tr>
     <tr>
       <td><code>circle</code></td>
       <td><code>boolean</code></td>
       <td><code>false</code></td>
-      <td>Makes the skeleton a circle</td>
+      <td>Renders as a circle</td>
     </tr>
     <tr>
       <td><code>className</code></td>
